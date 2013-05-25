@@ -34,12 +34,14 @@
 		function scpreview($attrs) {
 			global $scdoneopenfunc;
 
+			$out="";
+
 			if (!$scdoneopenfunc) {
-				echo '<script language="javascript">';
-				echo '  function scopenurl(u) {';
-				echo '    window.location=u;';
-				echo '  }';
-				echo '</script>';
+				$out.='<script language="javascript">';
+				$out.='  function scopenurl(u) {';
+				$out.='    window.location=u;';
+				$out.='  }';
+				$out.='</script>';
 
 				$scdoneopenfunc=TRUE;
 			}
@@ -53,7 +55,11 @@
 			if (isset($attrs["link"]))
 				$linktext=$attrs["link"];
 
-			echo '<a class="sc-preview-link" href="javascript:void(0);" onclick="scopenurl('."'".$url."'".');">'.$linktext.'</a>';
+			$out.='<a class="sc-preview-link" href="javascript:void(0);" onclick="scopenurl('."'".$url."'".');">';
+			$out.=$linktext;
+			$out.='</a>';
+
+			return $out;
 		}
 
 		/**
