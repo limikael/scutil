@@ -11,7 +11,7 @@ There is some functionality I was missing from that plugin, so I developed this 
 form of WordPress short tags. The available short tags are:
 
 Course preview button
-=====================
+---------------------
 
 [scpreview courseid="my-course-id"]
 
