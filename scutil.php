@@ -29,3 +29,4 @@ require_once __DIR__."/SCUtilPlugin.php";
 $scutil=SCUtilPlugin::getInstance();
 
 add_shortcode("scpreview",array($scutil,"scpreview"));
+add_shortcode("sctoplist",array($scutil,"sctoplist"));
