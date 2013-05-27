@@ -18,3 +18,18 @@ Course preview button
 This creates a button to let your users test a course without being registered. Obviously, in this case there will 
 tracking of progress or completion for the user, but it can be useful for showcasing your courses on your
 webpage.
+
+Course toplist
+--------------
+
+[sctoplist courseid="my-course-id" columns="columns-to-include"]
+
+Shows a toplist of the learners for a particular course. The optional columns attribute selectes what information
+to include in the toplist, and should be a comma separated list. The available columns are:
+
+* name - Full name of the learner
+* score - The score achieved for the learner
+* complete - The completion status
+* success - The success status
+
+The default value for the columns attribute is name,complete,score.
