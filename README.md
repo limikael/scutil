@@ -27,9 +27,10 @@ Course toplist
 Shows a toplist of the learners for a particular course. The optional columns attribute selectes what information
 to include in the toplist, and should be a comma separated list. The available columns are:
 
-* name - Full name of the learner
-* score - The score achieved for the learner
-* complete - The completion status
-* success - The success status
+* name - Full name of the learner.
+* score - The score achieved by the learner.
+* complete - The completion status.
+* success - The success status.
 
-The default value for the columns attribute is name,complete,score.
+The default value for the columns attribute is name,complete,score. The toplist will be sorted by score, so that the
+learner who achieved the top score will be listed first.
