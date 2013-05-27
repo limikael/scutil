@@ -33,4 +33,5 @@ to include in the toplist, and should be a comma separated list. The available c
 * success - The success status.
 
 The default value for the columns attribute is name,complete,score. The toplist will be sorted by score, so that the
-learner who achieved the top score will be listed first.
+learner who achieved the top score will be listed first. The toplist uses css classes so it can easily be
+styled.
